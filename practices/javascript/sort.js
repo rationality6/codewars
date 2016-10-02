@@ -1,11 +1,13 @@
-function sorting(array){
-  return array.sort((a,b)=>a-b)
+const sorting = array => {
+  return array.sort((a, b) => a - b)
 }
+
+console.log(sorting([3, 2, 6]));
 
 //desc order.
 
-function sorting(array){
-  return array.sort((a,b)=>(a-b)*-1)
+const sorting = array => {
+  return array.sort((a, b) => (a - b) * -1)
 }
 
-console.log(sorting([3,2,6]));
+console.log(sorting([3, 2, 6]));

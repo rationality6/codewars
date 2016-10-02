@@ -1,8 +1,6 @@
-
-
-var links = $("a");
-for(var i = 0; i < links.length; i++){
-  var element = links[i];
+let links = $("a");
+for(let i = 0; i < links.length; i++){
+  let element = links[i];
   element.addEventListener('click',function(e){
     e.preventDefault();
     console.log(this);
@@ -11,4 +9,3 @@ for(var i = 0; i < links.length; i++){
     this.style.color = "red";
   })
 }
-

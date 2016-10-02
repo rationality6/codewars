@@ -1,4 +1,4 @@
-var state = {
+const state = {
   contactData:[
           {id: 1, name:"Bbet",phone:'310 21349 2348'},
           {id: 2, name:"Aetty",phone:'210 21349 1234'},

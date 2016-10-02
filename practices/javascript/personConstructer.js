@@ -1,12 +1,18 @@
-function Person(gender) {
-  this.gender = gender;
-  alert('Person instantiated');
+class Person {
+  constructor(gender) {
+    this.gender = gender;
+  }
 }
 
-Person.sayHello = function()
-{
-  alert ('hello');
+Person.sayHello = () => {
+  console.log('hello');
 };
 
+Person.sayHello()
 
-Person.prototype.sayGreeting = function(){ console.log('hi') };
+Person.prototype.sayGreeting = function() {
+  console.log(`I'm ${this.gender}`)
+};
+
+const a = new Person('male')
+a.sayGreeting()

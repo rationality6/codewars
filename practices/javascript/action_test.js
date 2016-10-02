@@ -1,4 +1,4 @@
-var actionCreator = function() {
+const actionCreator = () => {
   return {
     type: 'AN_ACTION'
   }
