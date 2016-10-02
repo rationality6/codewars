@@ -1,12 +1,13 @@
-var myCar = new Object();
+const myCar = new Object();
 myCar.make = "Ford"
 
-// console.log(myCar);
+console.log(myCar);
 
 
-function showProps(obj, objName){
-  var result = "";
-  for(var i in obj)
+
+const showProps = (obj, objName) => {
+  let result = "";
+  for(let i in obj)
     if(obj.hasOwnProperty(i)){
       result += objName+"."+i+"="+obj[i]+"\n";
     }
@@ -19,7 +20,8 @@ obj0 = {
   'baz':3
 }
 
-// console.log(showProps(obj0,'foo'));
+console.log(showProps(obj0,'foo'));
+
 
 
 function listAllProperties(o){

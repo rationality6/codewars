@@ -1,5 +1,5 @@
-var Person = function(){
-  var person = {
+const Person = () => {
+  const person = {
     _name: "Leroy",
     _friends: [],
     fillFriends(f){

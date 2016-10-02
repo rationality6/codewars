@@ -1,3 +1,3 @@
-function SafeInteger(n) {
+const SafeInteger = (n) => {
 	  return Number.isSafeInteger(n);
 }

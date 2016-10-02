@@ -1,66 +1,77 @@
-function outter() {
-  var greeting = "Hello wolrd"
-
-  return function() {
-    console.log(greeting);
+const outter = () => {
+  let greeting = "Hello wolrd"
+  return () => {
+    return greeting;
   }
 }
 
-inner = outter()
-// inner()
-  // console.log(greeting);
+const inner = outter()
+console.log(inner());
+
+// undefined
+console.log(greeting);
 
 
-function addOne() {
-  var a = 0
-  return function() {
-    a++
-    return a
+
+
+const addOne = () => {
+  let a = 0
+  return () => {
+    return ++a
   }
 }
 
 adding = addOne()
-  // console.log(adding() + 3);
+console.log(adding());
+console.log(adding());
+console.log(adding() + 3);
+console.log(adding());
 
 
 
-function factory_movie(title) {
+const factory_movie = title => {
   return {
-    get_title: function() {
+    get_title() {
       return title;
     },
-    set_title: function(_title){
+    set_title(_title) {
       title = _title
     }
   }
 }
 
-// ghost = factory_movie('Ghost in the shell')
-// console.log(ghost.get_title());
-// console.log(ghost.title);
-// ghost.set_title('foo')
-// console.log(ghost.get_title());
+ghost = factory_movie('Ghost in the shell')
+console.log(ghost.get_title());
+console.log(ghost.title);
+ghost.set_title('foo')
+console.log(ghost.get_title());
 
 
-var arr = []
-for(var i = 0; i < 5; i++){
-    arr[i] = function(){
-        return i;
+
+
+let arr = []
+for (let i = 0; i < 5; i++) {
+  arr[i] = function() {
+    return i;
+  }
+}
+console.log(arr);
+
+for (let index in arr) {
+  console.log(arr[index]());
+}
+
+
+
+
+let arr = []
+for (let i = 0; i < 5; i++) {
+  arr[i] = function(id) {
+    return function() {
+      return id;
     }
+  }(i);
 }
-for(var index in arr) {
-    console.log(arr[index]());
-}
-
-
-var arr = []
-for(var i = 0; i < 5; i++){
-    arr[i] = function(id) {
-        return function(){
-            return id;
-        }
-    }(i);
-}
-for(var index in arr) {
-    console.log(arr[index]());
+for (let index in arr) {
+  console.log(arr[index]());
 }

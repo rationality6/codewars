@@ -1,4 +1,4 @@
-var o = {
+let o = {
   a: 7,
   get b() {
     return this.a + 1

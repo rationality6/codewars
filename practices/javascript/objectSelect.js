@@ -11,9 +11,9 @@ const state = {
   ]
 }
 
-console.log(state.contactData[0].name = 'g');
+state.contactData[0].name = 'g'
 
-var string = JSON.stringify(state,null,3)
-// console.log(string);
-var string = JSON.parse(string)
-// console.log(string);
+let string = JSON.stringify(state,null,4)
+console.log(string);
+let stringParse = JSON.parse(string)
+console.log(stringParse);

@@ -1,7 +1,7 @@
 array0 = ['hyun', 'kim', 'john'];
 array1 = ['Hyun', 'Kim', 'John'];
 
-function search(data, key) {
+const search = (data, key) => {
   return data.filter((x) => {
     return x.toString().toLowerCase()
     .indexOf(key.toLowerCase()) > -1;
