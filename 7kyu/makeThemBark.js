@@ -1,16 +1,20 @@
-function Dog(name, breed, sex, age) {
-  this.name = name;
-  this.breed = breed;
-  this.sex = sex;
-  this.age = age;
+class Dog {
+  constructor(name, breed, sex, age) {
+    this.name = name;
+    this.breed = breed;
+    this.sex = sex;
+    this.age = age;
+  }
 };
 
-Dog.prototype.bark = function(){
+Dog.prototype.bark = () => {
   return "Woof!"
 }
 
-var apollo = new Dog('Apollo', 'Dobermann', 'male', '4');
-var zeus = new Dog('Zeus', 'Dobermann', 'male', '4');
+let apollo = new Dog('Apollo', 'Dobermann', 'male', '4');
+let zeus = new Dog('Zeus', 'Dobermann', 'male', '4');
 
-Test.assertEquals(apollo.bark(), 'Woof!');
-Test.assertEquals(zeus.bark(), 'Woof!');
+console.log(apollo.bark());
+// 'Woof!'
+console.log(zeus.bark());
+// 'Woof!'

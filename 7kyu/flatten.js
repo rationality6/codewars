@@ -15,7 +15,6 @@
 
 const flatten = array => [].concat.apply([], array)
 
-
 const result = flatten([
   [1, 2, 3],
   ["a", "b", "c"],

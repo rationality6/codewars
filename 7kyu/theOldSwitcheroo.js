@@ -13,7 +13,8 @@
 //
 
 // const vowel2index = (str) => str.replace(/[aeiou]/ig,(m,i)=>i+1)
-const vowel2index = (str) => str.replace(/[aeiou]/ig,(m,i)=>i+1)
+
+const vowel2index = str => str.replace(/[aeoiu]/ig,(m,i)=>i+1)
 
 console.log(vowel2index('this is my string'));
 console.log(vowel2index('Codewars is the best site in the world'));
