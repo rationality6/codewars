@@ -3,7 +3,7 @@ $.ajax({
   url: "http://advanced-js.herokuapp.com/chuck_norris",
 })
 
-var xmlhttp = new XMLHttpRequest();
+let xmlhttp = new XMLHttpRequest();
 xmlhttp.open("GET", "http://advanced-js.herokuapp.com/chuck_norris", true);
 
 $.ajax({
@@ -14,4 +14,4 @@ $.ajax({
   }
 })
 
-var chuck = new ChuckNorris();
+let chuck = new ChuckNorris();
