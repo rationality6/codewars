@@ -1,5 +1,3 @@
-import qunit = 'qunit'
-
 const arr0 = [12, 9, 9, 111, 2, 3, 4, 4, 5, 7, 12];
 
 const findDuplication = arr => {

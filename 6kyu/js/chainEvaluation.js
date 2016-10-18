@@ -7,6 +7,8 @@
 })(Number.prototype)
 
 
+
+
 console.log((0).add(2));
  // === 2, 'Adds to a number');
 
