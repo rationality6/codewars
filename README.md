@@ -2,9 +2,10 @@ codewars
 
 Problem solving practice.
 
--- Javascript
+-- Javascript(ES6)
 -- Ruby
 -- Python
+
 
 
 ![alt tag](codewars.png)
