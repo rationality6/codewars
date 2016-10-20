@@ -2,9 +2,7 @@ const foo = str => {
     return str;
 };
 
-foo();
+foo('f');
 
-console.log('foo');
-const foo = str => {
-    return str
-}
+console.log('foo1');
+
