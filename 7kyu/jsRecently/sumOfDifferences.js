@@ -15,20 +15,23 @@ const lcm = (a, b) => {
 
 const sum = arr => {
   let result = 0
-  for(){
-
+  for(let i = 0 ;i<arr.length;i+=1){
+    result += arr[i]
   }
+  return result
 }
 
 const sumDifferencesBetweenProductsAndLCMs = pairs => {
   let products = pairs.map(a => a[0] * a[1])
-  let productsSum = products.reduce((a, b) => a + b)
+  let productsSum = sum(products)
+  // let productsSum = products.reduce((a, b) => a + b)
   console.log(productsSum);
   let lcmv = pairs.map(a => {
     return lcm(a[0], a[1])
   })
   console.log(lcmv);
-  let lcmvSum = lcmv.reduce((a, b) => a + b)
+  // let lcmvSum = lcmv.reduce((a,b)=>a+b)
+  let lcmvSum = sum(lcmv)
   return productsSum - lcmvSum
 }
 
