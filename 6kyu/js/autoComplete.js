@@ -1,4 +1,5 @@
 const autocomplete = (input, dictionary) => {
+  // let r = new RegExp('^' + input.replace(/[^a-z]/gi,''), 'i');
   let r = new RegExp('^' + input.replace(/[^a-z]/gi,''), 'i');
   return dictionary.filter(w => r.test(w)).slice(0, 5);
 }
