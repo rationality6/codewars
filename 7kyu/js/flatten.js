@@ -32,3 +32,9 @@ console.log(result2);
 // flatten([[1, 2, 3], ["a", "b", "c"], [1, 2, 3]]), [1, 2, 3, "a", "b", "c", 1, 2, 3]);
 // flatten([[3, 4, 5], [[9, 9, 9]], ["a,b,c"]]), [3, 4, 5, [9, 9, 9], "a,b,c"]);
 // flatten([[[3], [4], [5]], [9], [9], [8], [[1, 2, 3]]]), [[3], [4], [5], 9, 9, 8, [1, 2, 3]]);
+
+
+
+
+구글 소프트웨어 엔지니어가 되기위한 데일리 연습 플랜.
+A complete daily plan for studying to become a Google software engineer.
