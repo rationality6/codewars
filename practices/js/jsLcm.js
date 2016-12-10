@@ -1,9 +1,7 @@
-
-console.log(15%3);
-
 console.log(jsLcm(15,18));
 
 const gcd = (a,b) =>{
+  console.log(!b);
   return !b ? a : gcd(b,a%b)
 }
 
