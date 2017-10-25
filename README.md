@@ -3,8 +3,8 @@ codewars
 Problem solving practice.
 
 -- Javascript(ES6)
+-- Python3
 -- Ruby
--- Python
 
 
 
@@ -12,4 +12,5 @@ Problem solving practice.
 
 
 
-![alt tag](codewars.png)
+<!-- ![alt tag](screen_shot/codewars0.png) -->
+![alt tag](screen_shot/codewars1.png)
